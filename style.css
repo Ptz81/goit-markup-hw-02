@@ -1,0 +1,95 @@
+/* basic color parameters */
+
+:root{
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --footer-bg-color: #2F303A;
+    --main-color: #FFFFFF;
+    --secondary-bg-color: #F5F4FA;
+    --trans-text-color: rgba(255, 255, 255, 60%);
+    --logo-color: #000000;
+}
+
+/* main parameters */
+body{
+    background-color: var(--main-color);
+    color: var(--primary-text-color);
+}
+h2, h3, h4{
+    color: var(--title-text-color);
+}
+li{
+    list-style: none;
+}
+
+/* header */
+
+.logo{
+    color: var(--logo-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo>span{
+    color: var(--accent-color);
+}
+
+.menu a{
+    color: var(--title-text-color);
+    
+}
+
+.menu a:hover,
+.menu-contact a:hover {
+    color: var(--accent-color);
+}
+
+.menu-contact a{
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+
+/* Hero section */
+
+.hero{
+    background-color: var(--footer-bg-color);
+    color: var(--main-color)
+}
+.btn{
+    background-color: var(--accent-color);
+    color: var(--main-color);
+}
+
+
+/* Advantages section */
+
+
+
+/* Activity */
+
+
+
+
+/* Team */
+
+
+
+
+/* Footer */
+.footer{
+    background-color: var(--footer-bg-color);
+    
+}
+.footer>.logo{
+    color: var(--main-color);
+}
+.map a{
+    color: var(--main-color);
+}
+
+.menu-contact .footer-item a{
+    color: var(--trans-text-color);
+   
+}
