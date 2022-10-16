@@ -7,16 +7,28 @@
     --footer-bg-color: #2F303A;
     --main-color: #FFFFFF;
     --secondary-bg-color: #F5F4FA;
-    --trans-text-color: rgba(255, 255, 255, 60%);
+    --background: #F5F5F5;
+    --trans-text-color: rgba(255, 255, 255, .6);
     --logo-color: #000000;
+    --border-header:#ECECEC;
 }
 
 /* main parameters */
+.main{
+    background-color: var(--background);
+}
+
+.accent:hover,
+.accent:focus
+{
+    color: var(--accent-color);
+}
 body{
-    background-color: var(--main-color);
+    
     color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 h2, h3, h4{
     color: var(--title-text-color);
@@ -26,28 +38,27 @@ h2{
         font-size: 36px;
         line-height: 42px;
         text-align: center;
-        letter-spacing: 0.03em;
+        
 }
 
 h3{
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    letter-spacing: 0.03em;
+    
 }
 
 li{
     list-style: none;
 }
-
-header{
+/* header */
+.menu-link{
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
-
-/* header */
 
 .logo{
     color: var(--logo-color);
@@ -63,27 +74,14 @@ header{
     color: var(--accent-color);
 }
 
-.menu a{
+.title{
     color: var(--title-text-color);
-    text-decoration: none;
     
 }
 
-.menu a:hover,
-.menu a:focus,
-.menu-contact a:hover,
-.menu-contact a:focus,
-.footer-item:hover,
-.footer-item:focus {
-    color: var(--accent-color);
-}
-
-.menu-contact a{
+.primary{
     color: var(--primary-text-color);
-    text-decoration: none;
-    
 }
-
 
 /* Hero section */
 
@@ -120,28 +118,26 @@ header{
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
-.advantages-box p{
+.advantage-item{
     font-weight: 400;
-    font-size: 14px;
     line-height: 24px;
-    letter-spacing: 0.03em;
+
 }
 
 /* Activity */
 
 
-
-
 /* Team */
-.team-user p{
+.team{
+    background-color: var(--secondary-bg-color);
+}
+.user{
     font-weight: 400;
         font-size: 16px;
         line-height: 19px;
-        letter-spacing: 0.03em;
 }
 
 
@@ -150,6 +146,9 @@ header{
 .footer{
     background-color: var(--footer-bg-color);
     font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    
 }
 address{
     font-style: normal;
@@ -158,18 +157,15 @@ address{
 .footer>.logo{
     color: var(--main-color);
 }
-.map a{
+.map-link{
     color: var(--main-color);
+    text-decoration: none;
+
 }
 
-.footer-menu-contact .footer-item a{
+.footer-link{
     color: var(--trans-text-color);
-}
-.map a:hover,
-.footer-item a:hover,
-.map a:focus,
-.footer-item a:focus{
-    color: var(--accent-color);
+    text-decoration: none;
 }
 
 
@@ -186,7 +182,6 @@ address{
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
-    letter-spacing: 0.03em;
     cursor: pointer;
 }
 
@@ -200,7 +195,7 @@ address{
     cursor: pointer;
 }
 
-.portfolio-items h2{
+.portfolio-title{
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
@@ -208,10 +203,9 @@ address{
     text-align: left;
 }
 
-.portfolio-items p{
+.category{
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
-    letter-spacing: 0.03em;
     
 }
