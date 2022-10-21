@@ -14,9 +14,6 @@
 }
 
 /* main parameters */
-.main{
-    background-color: var(--background);
-}
 
 .accent:hover,
 .accent:focus
@@ -52,6 +49,7 @@ li{
     list-style: none;
 }
 
+
 .visually-hidden{
     position: absolute;
     width: 1px;
@@ -84,13 +82,17 @@ li{
     letter-spacing: 0.03em;
 }
 
-.logo>span{
+/* .logo>span{
     color: var(--accent-color);
-}
+} */
 
 .title{
     color: var(--title-text-color);
     
+}
+
+.focus-color {
+    color: var(--accent-color);
 }
 
 .primary{
@@ -189,10 +191,10 @@ address{
     background-color: var(--secondary-bg-color);
     color: var(--title-text-color);
     font-family: inherit;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    letter-spacing: 0.03em;
     cursor: pointer;
 }
 
